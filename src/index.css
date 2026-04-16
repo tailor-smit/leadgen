@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #5850EC;
+  --color-bg: #050505;
+  --color-sidebar: #0A0A0A;
+  --color-muted: #888888;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans;
+  }
+}
+
+@layer utilities {
+  .text-stroke-accent {
+    -webkit-text-stroke: 1px var(--color-accent);
+    -webkit-text-fill-color: transparent;
+  }
+}
